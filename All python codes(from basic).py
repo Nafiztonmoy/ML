@@ -201,8 +201,8 @@ while i <= 4:
         j += 1
     print(" ", end="")  # space between groups
     i += 1
-print("#21")#1357 135 13 1
 
+print("#21")#1357 135 13 1
 i = 4
 while i >= 1:
     j = 1
@@ -214,8 +214,97 @@ while i >= 1:
     print(" ", end="")  # space between groups
     i -= 1    
 
+'''LIST [ data ] can  append or remove data
+   TUPLE (data ) cant remove or append data'''
 
+#LIST
+print("#22")
+data = [12,24,5,566,4]
+data.append(34)
+data.remove(24)
+print (data)
 
+'''TUPLE( we cant directly add or remove data from a tuple
+      we need to turn into a list then do those operations )'''
+
+#TUPLE
+print("#23")
+data = (12,24,5,566,34)
+new_data=list(data)
+new_data.append(34)
+new_data.remove(24)
+print (new_data)
+
+#Dictionary
+print("#24")
+locations={    
+    ("paris","France"):"Eiffel Tower",#paris,france egula key and Eiffle tower is the value
+    ("Newyork","USA"):"Statue of liberty"
+}
+
+#(TASK ON list, tuple, dictionary in python)
+
+print("#25")
+#1.Lists Write a program that: Creates a list of 5 numbers,
+#Adds a new number to the list,Removes a number from the list(user input)
+#Prints the sum of all numbers in the list. 
+A=int(input("Enter the number that u want to add:"))
+data=[12,13,14,15,16]
+data.append(A)
+print("The list is :",data)
+B=int(input("Enter the number that u want to remove:"))
+data.remove(B)
+print("The list is :",data)
+sum=sum(data)
+print("The sum of final list is:",sum)
+
+print("#26")
+#2.Lists Write a program that: Creates a list of 5 numbers,
+#Adds a new number to the list,Removes 2nd from the list
+#Prints the sum of all numbers in the list.
+A=int(input("Enter the number that u want to add:"))
+data=[1,2,3,4,5]
+data.append(A)
+print("The list is :",data)
+remove=data.pop(1) #removing certain value from a index [pop(index)]
+print("after removing 2nd number, the list is :",data)
+sum=sum(data)
+print("The sum of final list is:",sum)
+
+print("#27")
+#3.(Tuples) Creates a tuple with the names of 5 cities.
+#Prints the third city in the tuple. Converts the tuple into a list
+#Adds a new city,and converts it back to a tuple. 
+#Prints the modified tuple.
+cities=("virginia","southdakota","missouri","sanfransisco","newyork")
+print("The third city is :",cities[2])
+new_data=list(cities)
+new_data.append("texas")
+print("The list is:")
+print(new_data)
+new_cities=tuple(new_data)
+print("The tuple is:")
+print(new_cities)
+
+print("#27")
+#4.ask 3: Dictionaries Create a dictionary where keys are subject names.
+#(e.g., Math, Science) and values are the marks (e.g., 90, 85). 
+# Adds a new subject with its mark to the dictionary. Updates the mark for one subject. 
+# Prints the average marks.
+
+#paris,france egula key and Eiffle tower is the value
+subjects={    
+    ("Math"):90,
+    ("Science"):85,
+    ("Physics"):100
+}
+subjects["Math"]=95
+print(subjects)
+total_marks=sum(subjects.values())
+print(total_marks)
+a=len(subjects)
+avg_marks=total_marks/a
+print("Avg mark is:",avg_marks)
 
 
 
