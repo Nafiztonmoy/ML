@@ -292,7 +292,7 @@ print("#27")
 # Adds a new subject with its mark to the dictionary. Updates the mark for one subject. 
 # Prints the average marks.
 
-#paris,france egula key and Eiffle tower is the value
+#math,science egula key and Eiffle tower is the value
 subjects={    
     ("Math"):90,
     ("Science"):85,
